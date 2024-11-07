@@ -1,0 +1,233 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 1200px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.horizontal-list li {
+    margin-right: 30px;
+    flex-grow: 1; 
+}
+
+.horizontal-list ul {
+    display: none;
+}
+
+.horizontal-list a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 12px; 
+    padding: 10px 10px; 
+    font-size: 13px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    display: block; 
+    text-align: center; 
+    transition: 0.5s;
+}
+
+.horizontal-list a:hover {
+    color: white; 
+    background-color: rgba(39, 3, 44, 0.377);
+    transform: scale(1.2); 
+}
+
+
+.container {
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: transform 0.6s;
+}
+
+.container img:hover{
+    transform: scale(1.1);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: normal;
+    margin: 0;
+    padding: 0;
+    background: rgb(172,101,16);
+    background: linear-gradient(90deg, rgb(83, 83, 83) 18%, rgba(9,9,13,1) 62%, rgb(153, 153, 153) 100%);
+    color: #333;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+footer{
+    color:black
+}
+
+.btn{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: 'Estonia';
+
+}
+
+.btn_up {
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer; 
+    transition: transform 0.6s;
+}
+
+.btn_up:hover {
+    color: white;
+    background-color: rgba(39, 3, 44, 0.377);
+    transform: scale(1.2);
+}
+
+
+@font-face {
+    font-family: 'Estonia';
+    src: url('../fonts/Estonia-Regular.eot');
+    src: local('Estonia Regular'), local('Estonia-Regular'),
+        url('Estonia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Estonia-Regular.woff2') format('woff2'),
+        url('../fonts/Estonia-Regular.woff') format('woff'),
+        url('../fonts/Estonia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.delius-regular {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.futer{
+    font-family: 'Delius';
+    font-size: 18px;
+}
+
+.ring{
+    color: black;
+    display: inline;
+    margin-left: 6px;
+}
+
+
+
+
+.fullScreen {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.fullScreeentext {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.containerPosition{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.fullScreenText_title {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+    line-height: 80px;
+}
+.fullScreenText_subtitle {
+    color: rgb(221, 221, 221);
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+    line-height: 60px;
+}
+
+.fullScreen video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 5;
+}
+
+.wrapper img{
+    transition: transform 0.3s;
+}
+
+.wrapper img:hover{
+    transform: scale(1.5s);
+}
